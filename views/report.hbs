@@ -1,77 +1,133 @@
 <section class="mb-6">
   <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">Report a Lost Item</h1>
-  <p class="text-gray-500 mt-1">Fill out the form below to register a lost item to the system.</p>
+  <p class="text-gray-500 mt-1">Fill out the form below to register a lost item
+    to the system.</p>
 </section>
 
-<div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8 max-w-2xl">
+<div
+  class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8 max-w-2xl"
+>
   <form action="/report" method="POST" enctype="multipart/form-data">
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
       <div class="flex flex-col gap-1.5">
         <label for="name" class="text-sm font-semibold text-gray-700">Item Name</label>
-        <input type="text" id="name" name="name" placeholder="e.g. Blue Wallet" required
-          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="e.g. Blue Wallet"
+          required
+          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+        />
       </div>
 
       <div class="flex flex-col gap-1.5">
-        <label for="location" class="text-sm font-semibold text-gray-700">Location Lost</label>
-        <input type="text" id="location" name="location" placeholder="e.g. Library Hall B" required
-          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition" />
+        <label
+          for="location"
+          class="text-sm font-semibold text-gray-700"
+        >Location Lost</label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          placeholder="e.g. Library Hall B"
+          required
+          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+        />
       </div>
 
       <div class="flex flex-col gap-1.5">
         <label for="date" class="text-sm font-semibold text-gray-700">Date Lost</label>
-        <input type="date" id="date" name="date" required
-          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition" />
+        <input
+          type="date"
+          id="date"
+          name="date"
+          required
+          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+        />
       </div>
 
       <div class="flex flex-col gap-1.5">
-        <label for="contact" class="text-sm font-semibold text-gray-700">Contact Email</label>
-        <input type="email" id="contact" name="contact" placeholder="e.g. student@univ.edu" required
-          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition" />
+        <label for="contact" class="text-sm font-semibold text-gray-700">Contact
+          Email</label>
+        <input
+          type="email"
+          id="contact"
+          name="contact"
+          placeholder="e.g. student@univ.edu"
+          required
+          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+        />
       </div>
 
       <div class="flex flex-col gap-1.5 sm:col-span-2">
-        <label for="description" class="text-sm font-semibold text-gray-700">Description</label>
-        <textarea id="description" name="description" rows="3" placeholder="Describe the item in detail..." required
-          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm resize-y focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"></textarea>
+        <label
+          for="description"
+          class="text-sm font-semibold text-gray-700"
+        >Description</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="3"
+          placeholder="Describe the item in detail..."
+          required
+          class="px-3 py-2.5 border border-gray-300 rounded-lg text-sm resize-y focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+        ></textarea>
       </div>
 
       <div class="flex flex-col gap-1.5 sm:col-span-2">
-        <label for="image" class="text-sm font-semibold text-gray-700">Item Image</label>
+        <label for="image" class="text-sm font-semibold text-gray-700">Item
+          Image</label>
         <div class="relative">
-          <input type="file" id="image" name="image" accept="image/*" required
-            class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
-          <div id="uploadLabel" class="flex items-center justify-center gap-3 px-4 py-6 border-2 border-dashed border-gray-300 rounded-lg text-gray-400 hover:border-indigo-500 hover:bg-indigo-50/30 transition-colors">
-            <span class="text-sm font-medium" id="fileText">Upload Your Image here!</span>
+          <input
+            type="file"
+            id="image"
+            name="image"
+            accept="image/*"
+            required
+            class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
+          />
+          <div
+            id="uploadLabel"
+            class="flex items-center justify-center gap-3 px-4 py-6 border-2 border-dashed border-gray-300 rounded-lg text-gray-400 hover:border-indigo-500 hover:bg-indigo-50/30 transition-colors"
+          >
+            <span class="text-sm font-medium" id="fileText">Upload Your Image
+              here!</span>
           </div>
         </div>
-        <img id="imagePreview" alt="Preview" class="hidden mt-3 max-h-48 rounded-lg object-cover shadow-sm" />
+        <img
+          id="imagePreview"
+          alt="Preview"
+          class="hidden mt-3 max-h-48 rounded-lg object-cover shadow-sm"
+        />
       </div>
 
     </div>
 
     <div class="flex gap-3 mt-7">
-      <button type="submit"
-        class="inline-flex items-center justify-center px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm rounded-lg shadow-sm hover:shadow-md transition-all">
+      <button
+        type="submit"
+        class="inline-flex items-center justify-center px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm rounded-lg shadow-sm hover:shadow-md transition-all"
+      >
         Submit Report
       </button>
-      <a href="/dashboard"
-        class="inline-flex items-center justify-center px-5 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-600 font-semibold text-sm rounded-lg border border-gray-200 transition-all no-underline">
+      <a
+        href="/dashboard"
+        class="inline-flex items-center justify-center px-5 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-600 font-semibold text-sm rounded-lg border border-gray-200 transition-all no-underline"
+      >
         Cancel
       </a>
     </div>
   </form>
 </div>
 
-<script>
-  document.getElementById('image').addEventListener('change', function(e) {
-    const preview = document.getElementById('imagePreview');
-    const file = e.target.files[0];
-    if (file) {
-      preview.src = URL.createObjectURL(file);
-      preview.classList.remove('hidden');
-      document.getElementById('fileText').textContent = file.name;
-    }
-  });
-</script>
+{{#section "scripts"}}
+  <script>
+    document.getElementById('image').addEventListener('change', function(e) {
+    const preview = document.getElementById('imagePreview'); const file =
+    e.target.files[0]; if (file) { preview.src = URL.createObjectURL(file);
+    preview.classList.remove('hidden');
+    document.getElementById('fileText').textContent = file.name; } });
+  </script>
+{{/section}}
